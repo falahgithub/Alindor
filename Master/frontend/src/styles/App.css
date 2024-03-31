@@ -1,0 +1,164 @@
+.gemini-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.App {
+  text-align: center;
+  padding: 30px 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.863);
+  
+}
+
+.title {
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: inline;
+  color: white;
+  word-spacing: 5px;
+  margin-bottom: 200px;
+}
+
+.title .brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.title h1 {
+  margin-left: 10px;
+  font-size: 30px;
+  display: inline;
+}
+
+.title span {
+  color: red;
+  font-size: larger;
+}
+
+/* .input-container {
+  display: flex;
+  flex-direction: column;
+} */
+
+.container {
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+.right-container,
+.left-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 40px 0px 20px 0px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 20px;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 30px;
+  font-size: 15px;
+  height: 200px;
+}
+.right-container {
+  flex-direction: column;
+  gap: 20px;
+}
+.right-container button {
+  background-color: transparent;
+  width: 80%;
+}
+
+.right-container button:not(:disabled):hover {
+  background-color: green;
+  color: white;
+}
+.input-file {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+input[type="file"] {
+  display: none;
+}
+
+.label {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #c0392b;
+  text-align: center;
+  padding: 15px 40px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
+  margin: 0;
+  outline: none;
+}
+label i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+label:active {
+  transform: scale(0.9);
+}
+
+.output-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: whitesmoke;
+  color: #999;
+}
+.output-container h3 {
+  color: rgba(0, 0, 0, 0.907);
+}
+
+.output-container .deepgram,
+.output-container .openAI {
+  width: 40%;
+  padding: 20px 40px;
+  text-align: justify;
+}
+
+
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-container,
+  .right-container {
+    width: 80%;
+  }
+  .input-file {
+    flex-direction: column;
+  }
+  .output-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .output-container h3 {
+    color: rgba(0, 0, 0, 0.907);
+  }
+  
+  .output-container .deepgram,
+  .output-container .openAI {
+    width: 80%;
+    padding: 20px 40px;
+    text-align: justify;
+  }
+  
+}
